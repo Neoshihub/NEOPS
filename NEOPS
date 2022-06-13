@@ -1,0 +1,26 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Neo PS", "DarkTheme")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("BLOX FRUIT")
+local Tab1Section = Tab1:NewSection("SCRIPTS")
+
+-- Buttons/Windows/Idk
+
+Tab1Section:NewButton("ATR", "BOBO", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
+	end)
+
+Tab1Section:NewButton("AUTO FARM CHEST", "SI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/fxss%20bf.lua"))()
+	end)
+
+Tab1Section:NewButton("THUNDER Z", "PACUUN", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/fxss%20bf.lua"))()
+	end)
+
+Tab1Section:NewButton("THUNDER Z", "TANGINAMO PACUUN", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/BFMobile.lua'))()
+	end)
+
