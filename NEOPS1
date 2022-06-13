@@ -1,25 +1,50 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Neo PS", "DarkTheme")
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Neoshi | Private Hub", "Ocean")
 
 -- Tabs
 
-local Tab1 = Window:NewTab("BLOX FRUIT")
-local Tab1Section = Tab1:NewSection("SCRIPTS")
+local Tab2 = Window:NewTab("SCRIPTS")
+local Tab2Section = Tab2:NewSection("OTHER SCRIPT IS MADE BY OTHERS")
+local Tab1 = Window:NewTab("OTHERS")
+local Tab1Section = Tab1:NewSection("I DONT KNOW IF THIS IS USEFULL TO YOU")
 
 -- Buttons/Windows/Idk
 
-Tab1Section:NewButton("ATR", "BOBO", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
-	end)
+Tab1Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
 
-Tab1Section:NewButton("AUTO FARM CHEST", "SI", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/fxss%20bf.lua"))()
-	end)
+Tab1Section:NewToggle("Fov", "Changes Fov", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 80
+    end
+end)
 
-Tab1Section:NewButton("THUNDER Z", "PACUUN", function()
+Tab1Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+
+Tab2Section:NewButton("THUNDER Z(RECCOMENDED)", "SCRIPT FOR AMATURE", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Script"))()
-	end)
+end) 
 
-Tab1Section:NewButton("RIPPER HUB", "TANGINAMO PACUUN", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/BFMobile.lua'))()
-	end)
+Tab2Section:NewButton("ATR HUB(MAIN SCRIPT) ", " SCRIPT FOR BEGGINERS", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
+end) 
+
+Tab2Section:NewButton("Auto Chest ", " Reset Every 10 seconds", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
+end) 
+
+Tab2Section:NewButton("META WARE ", " NO INFO GAINED. ", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/x2FIWz/SCRIPT/main/MOBILE/METAWARE.lua?fbclid=IwAR03Z0jsjApVSWzLBtyxEgMx0k3lKPzNVaC80bBuuLVCZim4ck-LnJu8MdI",true))()
+end) 
+
+
