@@ -10,9 +10,9 @@ local Tab1Section = Tab1:NewSection("I DONT KNOW IF THIS IS USEFULL TO YOU")
 local Tab3 = Window:NewTab("RO GHOUL")
 local Tab3Section = Tab3:NewSection("REQUESTED BY PACUUN")
 local Tab4 = Window:NewTab("PHANTOM FORCES")
-local Tab4Section = Tab2:NewSection("UNDEFINED")
+local Tab4Section = Tab4:NewSection("UNDEFINED")
 local Tab5 = Window:NewTab("PET SIM")
-local Tab5Section = Tab2:NewSection("UNDEFINED")
+local Tab5Section = Tab5:NewSection("SOME HUBS WONT WORK")
 
 -- Buttons/Windows/Idk
 
