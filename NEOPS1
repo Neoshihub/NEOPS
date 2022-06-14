@@ -9,6 +9,10 @@ local Tab1 = Window:NewTab("OTHERS")
 local Tab1Section = Tab1:NewSection("I DONT KNOW IF THIS IS USEFULL TO YOU")
 local Tab3 = Window:NewTab("RO GHOUL")
 local Tab3Section = Tab3:NewSection("REQUESTED BY PACUUN")
+local Tab4 = Window:NewTab("PHANTOM FORCES")
+local Tab4Section = Tab2:NewSection("UNDEFINED")
+local Tab5 = Window:NewTab("PET SIM")
+local Tab5Section = Tab2:NewSection("UNDEFINED")
 
 -- Buttons/Windows/Idk
 
@@ -42,14 +46,26 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/ma
 end) 
 
 Tab2Section:NewButton("Auto Chest ", " Reset Every 10 seconds", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
-end) 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/fxss%20bf.lua"))()
+end)
 
 Tab2Section:NewButton("META WARE ", " NO INFO GAINED. ", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/x2FIWz/SCRIPT/main/MOBILE/METAWARE.lua?fbclid=IwAR03Z0jsjApVSWzLBtyxEgMx0k3lKPzNVaC80bBuuLVCZim4ck-LnJu8MdI",true))()
 end) 
 
+Tab2Section:NewButton("ZEN HUB ", " NO INFO GAINED. ", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruit", true))()
+end) 
+
 Tab3Section:NewButton("CUSTOM SETUP", " TRY IT. ", function()
   loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
+end)
+
+Tab4Section:NewButton("CUSTOM SETUP", " TRY IT. ", function()
+  loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+end)
+
+Tab5Section:NewButton("IDK", " TRY IT. ", function()
+  loadstring(game:HttpGet"https://scriptblox.com/raw/SAZA-HUB_496")()
 end)
 
