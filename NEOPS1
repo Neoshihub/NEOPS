@@ -5,14 +5,14 @@ local Window = Library.CreateLib("Neoshi | Private Hub", "BloodTheme")
 
 local Tab2 = Window:NewTab("SCRIPTS")
 local Tab2Section = Tab2:NewSection("OTHER SCRIPT IS MADE BY OTHERS")
-local Tab1 = Window:NewTab("OTHERS")
-local Tab1Section = Tab1:NewSection("I DONT KNOW IF THIS IS USEFULL TO YOU")
 local Tab3 = Window:NewTab("RO GHOUL")
 local Tab3Section = Tab3:NewSection("REQUESTED BY PACUUN")
 local Tab4 = Window:NewTab("PHANTOM FORCES")
 local Tab4Section = Tab4:NewSection("UNDEFINED")
 local Tab5 = Window:NewTab("PET SIM")
 local Tab5Section = Tab5:NewSection("SOME HUBS WONT WORK")
+local Tab1 = Window:NewTab("OTHERS")
+local Tab1Section = Tab1:NewSection("I DONT KNOW IF THIS IS USEFULL TO YOU")
 
 -- Buttons/Windows/Idk
 
@@ -35,6 +35,23 @@ end)
 
 Tab1Section:NewSlider("Speed", "Sussy Speed", 250, 120, function(v)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+
+Tab1Section:NewButton("THUNDER Z AIMBOT", "SCRIPT IS MADABLE", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
+end)
+
+Tab1Section:NewButton("ONESHI AIMBOT", "SCRIPT IS MADABLE", function()
+getgenv().Config = {
+    Players = nil,
+    ESPPlayer = false,
+    FastAttack = false,
+    LockPlayers = false,
+    TableLockPlayers = Enum.KeyCode.RightControl,
+    TableResetPlayers = Enum.KeyCode.RightControl
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/kickTh/bithub/main/AimbotBloxfruit.lua'))();
 end)
 
 Tab2Section:NewButton("THUNDER Z(RECCOMENDED)", "SCRIPT FOR AMATURE", function()
